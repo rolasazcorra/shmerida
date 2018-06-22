@@ -140,4 +140,14 @@ class Dashboard extends CI_Controller {
     }
 
 
+
+
+    public function sections_admin()
+    {
+        $data['title']= "Sections";    
+        //$data['openings'] =$this->Post_model->get_openings();    
+        $this->load->view('Secciones/Sections',$data);
+    }
+
+
 }
